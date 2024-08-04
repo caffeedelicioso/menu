@@ -99,17 +99,18 @@
             display: flex;
             justify-content: space-between; /* Align item and price */
             align-items: center; /* Center vertically */
-            margin-bottom: 5px; /* Space between items */
+            margin-bottom: 10px; /* Space between items */
+            padding: 10px; /* Padding for each item */
+            border: 1px solid #ccc; /* Border for each item */
+            border-radius: 5px; /* Rounded corners */
+            background-color: #f1f1f1; /* Light background for items */
         }
         .item-price {
             font-weight: bold; /* Bold for price */
         }
         .menu-container {
-            border: 1px solid #ccc; /* Border around each menu */
             padding: 15px; /* Padding inside menu */
-            border-radius: 8px; /* Rounded corners */
             background-color: #f1f1f1; /* Light background color for menus */
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
             margin-bottom: 15px; /* Space below each menu */
         }
     </style>
@@ -169,100 +170,73 @@
     <div id="iced-coffee" class="menu-content menu-container">
         <h2>Iced Coffee Menu</h2>
         <div>
-            <div>Iced Coffee 1 <span>(20 Rs)</span></div>
-            <button onclick="addItem('Iced Coffee 1', 20)">+ Add</button>
-            <div>Iced Coffee 2 <span>(25 Rs)</span></div>
-            <button onclick="addItem('Iced Coffee 2', 25)">+ Add</button>
-            <div>Iced Coffee 3 <span>(30 Rs)</span></div>
-            <button onclick="addItem('Iced Coffee 3', 30)">+ Add</button>
+            <div class="item">Iced Coffee 1 <span class="item-price">(20 Rs)</span><button onclick="addItem('Iced Coffee 1', 20)">+ Add</button></div>
+            <div class="item">Iced Coffee 2 <span class="item-price">(25 Rs)</span><button onclick="addItem('Iced Coffee 2', 25)">+ Add</button></div>
+            <div class="item">Iced Coffee 3 <span class="item-price">(30 Rs)</span><button onclick="addItem('Iced Coffee 3', 30)">+ Add</button></div>
         </div>
     </div>
     <div id="mojito" class="menu-content menu-container">
         <h2>Mojito Menu</h2>
         <div>
-            <div>Mojito 1 <span>(35 Rs)</span></div>
-            <button onclick="addItem('Mojito 1', 35)">+ Add</button>
-            <div>Mojito 2 <span>(40 Rs)</span></div>
-            <button onclick="addItem('Mojito 2', 40)">+ Add</button>
-            <div>Mojito 3 <span>(45 Rs)</span></div>
-            <button onclick="addItem('Mojito 3', 45)">+ Add</button>
+            <div class="item">Mojito 1 <span class="item-price">(35 Rs)</span><button onclick="addItem('Mojito 1', 35)">+ Add</button></div>
+            <div class="item">Mojito 2 <span class="item-price">(40 Rs)</span><button onclick="addItem('Mojito 2', 40)">+ Add</button></div>
+            <div class="item">Mojito 3 <span class="item-price">(45 Rs)</span><button onclick="addItem('Mojito 3', 45)">+ Add</button></div>
         </div>
     </div>
     <div id="ice-tea" class="menu-content menu-container">
         <h2>Ice Tea Menu</h2>
         <div>
-            <div>Ice Tea 1 <span>(15 Rs)</span></div>
-            <button onclick="addItem('Ice Tea 1', 15)">+ Add</button>
-            <div>Ice Tea 2 <span>(20 Rs)</span></div>
-            <button onclick="addItem('Ice Tea 2', 20)">+ Add</button>
-            <div>Ice Tea 3 <span>(25 Rs)</span></div>
-            <button onclick="addItem('Ice Tea 3', 25)">+ Add</button>
+            <div class="item">Ice Tea 1 <span class="item-price">(15 Rs)</span><button onclick="addItem('Ice Tea 1', 15)">+ Add</button></div>
+            <div class="item">Ice Tea 2 <span class="item-price">(20 Rs)</span><button onclick="addItem('Ice Tea 2', 20)">+ Add</button></div>
+            <div class="item">Ice Tea 3 <span class="item-price">(25 Rs)</span><button onclick="addItem('Ice Tea 3', 25)">+ Add</button></div>
         </div>
     </div>
     <div id="hot-chocolate" class="menu-content menu-container">
         <h2>Hot Chocolate Menu</h2>
         <div>
-            <div>Hot Chocolate 1 <span>(30 Rs)</span></div>
-            <button onclick="addItem('Hot Chocolate 1', 30)">+ Add</button>
-            <div>Hot Chocolate 2 <span>(35 Rs)</span></div>
-            <button onclick="addItem('Hot Chocolate 2', 35)">+ Add</button>
-            <div>Hot Chocolate 3 <span>(40 Rs)</span></div>
-            <button onclick="addItem('Hot Chocolate 3', 40)">+ Add</button>
+            <div class="item">Hot Chocolate 1 <span class="item-price">(30 Rs)</span><button onclick="addItem('Hot Chocolate 1', 30)">+ Add</button></div>
+            <div class="item">Hot Chocolate 2 <span class="item-price">(35 Rs)</span><button onclick="addItem('Hot Chocolate 2', 35)">+ Add</button></div>
+            <div class="item">Hot Chocolate 3 <span class="item-price">(40 Rs)</span><button onclick="addItem('Hot Chocolate 3', 40)">+ Add</button></div>
         </div>
     </div>
     <div id="green-teas" class="menu-content menu-container">
         <h2>Green Teas Menu</h2>
         <div>
-            <div>Green Tea 1 <span>(10 Rs)</span></div>
-            <button onclick="addItem('Green Tea 1', 10)">+ Add</button>
-            <div>Green Tea 2 <span>(15 Rs)</span></div>
-            <button onclick="addItem('Green Tea 2', 15)">+ Add</button>
-            <div>Green Tea 3 <span>(20 Rs)</span></div>
-            <button onclick="addItem('Green Tea 3', 20)">+ Add</button>
+            <div class="item">Green Tea 1 <span class="item-price">(10 Rs)</span><button onclick="addItem('Green Tea 1', 10)">+ Add</button></div>
+            <div class="item">Green Tea 2 <span class="item-price">(15 Rs)</span><button onclick="addItem('Green Tea 2', 15)">+ Add</button></div>
+            <div class="item">Green Tea 3 <span class="item-price">(20 Rs)</span><button onclick="addItem('Green Tea 3', 20)">+ Add</button></div>
         </div>
     </div>
     <div id="hot-coffees" class="menu-content menu-container">
         <h2>Hot Coffees Menu</h2>
         <div>
-            <div>Hot Coffee 1 <span>(25 Rs)</span></div>
-            <button onclick="addItem('Hot Coffee 1', 25)">+ Add</button>
-            <div>Hot Coffee 2 <span>(30 Rs)</span></div>
-            <button onclick="addItem('Hot Coffee 2', 30)">+ Add</button>
-            <div>Hot Coffee 3 <span>(35 Rs)</span></div>
-            <button onclick="addItem('Hot Coffee 3', 35)">+ Add</button>
+            <div class="item">Hot Coffee 1 <span class="item-price">(25 Rs)</span><button onclick="addItem('Hot Coffee 1', 25)">+ Add</button></div>
+            <div class="item">Hot Coffee 2 <span class="item-price">(30 Rs)</span><button onclick="addItem('Hot Coffee 2', 30)">+ Add</button></div>
+            <div class="item">Hot Coffee 3 <span class="item-price">(35 Rs)</span><button onclick="addItem('Hot Coffee 3', 35)">+ Add</button></div>
         </div>
     </div>
     <div id="frappe" class="menu-content menu-container">
         <h2>Frappe Menu</h2>
         <div>
-            <div>Frappe 1 <span>(30 Rs)</span></div>
-            <button onclick="addItem('Frappe 1', 30)">+ Add</button>
-            <div>Frappe 2 <span>(35 Rs)</span></div>
-            <button onclick="addItem('Frappe 2', 35)">+ Add</button>
-            <div>Frappe 3 <span>(40 Rs)</span></div>
-            <button onclick="addItem('Frappe 3', 40)">+ Add</button>
+            <div class="item">Frappe 1 <span class="item-price">(30 Rs)</span><button onclick="addItem('Frappe 1', 30)">+ Add</button></div>
+            <div class="item">Frappe 2 <span class="item-price">(35 Rs)</span><button onclick="addItem('Frappe 2', 35)">+ Add</button></div>
+            <div class="item">Frappe 3 <span class="item-price">(40 Rs)</span><button onclick="addItem('Frappe 3', 40)">+ Add</button></div>
         </div>
     </div>
     <div id="shakes" class="menu-content menu-container">
         <h2>Shakes Menu</h2>
         <div>
-            <div>Shake 1 <span>(20 Rs)</span></div>
-            <button onclick="addItem('Shake 1', 20)">+ Add</button>
-            <div>Shake 2 <span>(25 Rs)</span></div>
-            <button onclick="addItem('Shake 2', 25)">+ Add</button>
-            <div>Shake 3 <span>(30 Rs)</span></div>
-            <button onclick="addItem('Shake 3', 30)">+ Add</button>
+            <div class="item">Shake 1 <span class="item-price">(20 Rs)</span><button onclick="addItem('Shake 1', 20)">+ Add</button></div>
+            <div class="item">Shake 2 <span class="item-price">(25 Rs)</span><button onclick="addItem('Shake 2', 25)">+ Add</button></div>
+            <div class="item">Shake 3 <span class="item-price">(30 Rs)</span><button onclick="addItem('Shake 3', 30)">+ Add</button></div>
         </div>
     </div>
     <div id="bites" class="menu-content menu-container">
         <h2>Bites Menu</h2>
         <div>
-            <div>Bite 1 <span>(15 Rs)</span></div>
-            <button onclick="addItem('Bite 1', 15)">+ Add</button>
-            <div>Bite 2 <span>(20 Rs)</span></div>
-            <button onclick="addItem('Bite 2', 20)">+ Add</button>
-            <div>Bite 3 <span>(25 Rs)</span></div>
-            <button onclick="addItem('Bite 3', 25)">+ Add</button>
+            <div class="item">Bite 1 <span class="item-price">(15 Rs)</span><button onclick="addItem('Bite 1', 15)">+ Add</button></div>
+            <div class="item">Bite 2 <span class="item-price">(20 Rs)</span><button onclick="addItem('Bite 2', 20)">+ Add</button></div>
+            <div class="item">Bite 3 <span class="item-price">(25 Rs)</span><button onclick="addItem('Bite 3', 25)">+ Add</button></div>
         </div>
     </div>
 </div>
