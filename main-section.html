@@ -96,9 +96,10 @@
             cursor: pointer;
         }
         .item {
-            display: flex;
-            justify-content: space-between; /* Align item and price */
-            align-items: center; /* Center vertically */
+            display: flex; /* Flexbox for item layout */
+            justify-content: center; /* Center items within the item container */
+            align-items: center; /* Center items vertically */
+            width: 80%; /* Set a width to allow space for centering */
             margin-bottom: 10px; /* Space between items */
             padding: 10px; /* Padding for each item */
             border: 1px solid #ccc; /* Border for each item */
@@ -112,6 +113,15 @@
             padding: 15px; /* Padding inside menu */
             background-color: #f1f1f1; /* Light background color for menus */
             margin-bottom: 15px; /* Space below each menu */
+            display: flex; /* Use flexbox */
+            flex-direction: column; /* Align items in a column */
+            align-items: center; /* Center items horizontally */
+        }
+        .menu-content > div {
+            display: flex; /* Flexbox for item list */
+            flex-direction: column; /* Align items in a column */
+            align-items: center; /* Center items horizontally */
+            width: 100%; /* Take full width */
         }
     </style>
 </head>
