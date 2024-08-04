@@ -93,49 +93,118 @@
 </header>
 
 <section id="menu-section">
-    <div class="container" onclick="showMenu('Iced Coffee')">
+    <div class="container" onclick="showMenu('iced-coffee')">
         <div class="food-logo">&#x2615;</div>Iced Coffee
     </div>
-    <div class="container" onclick="showMenu('Mojito')">
+    <div class="container" onclick="showMenu('mojito')">
         <div class="food-logo">&#x1F379;</div>Mojito
     </div>
-    <div class="container" onclick="showMenu('Ice Tea')">
+    <div class="container" onclick="showMenu('ice-tea')">
         <div class="food-logo">&#x2615;</div>Ice Tea
     </div>
-    <div class="container" onclick="showMenu('Hot Chocolate')">
+    <div class="container" onclick="showMenu('hot-chocolate')">
         <div class="food-logo">&#x2615;</div>Hot Chocolate
     </div>
-    <div class="container" onclick="showMenu('Green Teas')">
+    <div class="container" onclick="showMenu('green-teas')">
         <div class="food-logo">&#x1F375;</div>Green Teas
     </div>
-    <div class="container" onclick="showMenu('Hot Coffees')">
+    <div class="container" onclick="showMenu('hot-coffees')">
         <div class="food-logo">&#x2615;</div>Hot Coffees
     </div>
-    <div class="container" onclick="showMenu('Frappe')">
+    <div class="container" onclick="showMenu('frappe')">
         <div class="food-logo">🥤</div>Frappe
     </div>
-    <div class="container" onclick="showMenu('Shakes')">
+    <div class="container" onclick="showMenu('shakes')">
         <div class="food-logo">🥤</div>Shakes
     </div>
-    <div class="container" onclick="showMenu('Bites')">
+    <div class="container" onclick="showMenu('bites')">
         <div class="food-logo">&#x1F37D;</div>Bites
     </div>
 </section>
 
 <div id="menu-list" class="menu-list"></div>
 
+<!-- Menu Item Templates -->
+<div id="menu-templates" style="display:none;">
+    <div id="iced-coffee" class="menu-content">
+        <h2>Iced Coffee Menu</h2>
+        <ul>
+            <li>Iced Coffee 1</li>
+            <li>Iced Coffee 2</li>
+            <li>Iced Coffee 3</li>
+        </ul>
+    </div>
+    <div id="mojito" class="menu-content">
+        <h2>Mojito Menu</h2>
+        <ul>
+            <li>Mojito 1</li>
+            <li>Mojito 2</li>
+            <li>Mojito 3</li>
+        </ul>
+    </div>
+    <div id="ice-tea" class="menu-content">
+        <h2>Ice Tea Menu</h2>
+        <ul>
+            <li>Ice Tea 1</li>
+            <li>Ice Tea 2</li>
+            <li>Ice Tea 3</li>
+        </ul>
+    </div>
+    <div id="hot-chocolate" class="menu-content">
+        <h2>Hot Chocolate Menu</h2>
+        <ul>
+            <li>Hot Chocolate 1</li>
+            <li>Hot Chocolate 2</li>
+            <li>Hot Chocolate 3</li>
+        </ul>
+    </div>
+    <div id="green-teas" class="menu-content">
+        <h2>Green Teas Menu</h2>
+        <ul>
+            <li>Green Tea 1</li>
+            <li>Green Tea 2</li>
+            <li>Green Tea 3</li>
+        </ul>
+    </div>
+    <div id="hot-coffees" class="menu-content">
+        <h2>Hot Coffees Menu</h2>
+        <ul>
+            <li>Hot Coffee 1</li>
+            <li>Hot Coffee 2</li>
+            <li>Hot Coffee 3</li>
+        </ul>
+    </div>
+    <div id="frappe" class="menu-content">
+        <h2>Frappe Menu</h2>
+        <ul>
+            <li>Frappe 1</li>
+            <li>Frappe 2</li>
+            <li>Frappe 3</li>
+        </ul>
+    </div>
+    <div id="shakes" class="menu-content">
+        <h2>Shakes Menu</h2>
+        <ul>
+            <li>Shake 1</li>
+            <li>Shake 2</li>
+            <li>Shake 3</li>
+        </ul>
+    </div>
+    <div id="bites" class="menu-content">
+        <h2>Bites Menu</h2>
+        <ul>
+            <li>Bite 1</li>
+            <li>Bite 2</li>
+            <li>Bite 3</li>
+        </ul>
+    </div>
+</div>
+
 <script>
     function showMenu(item) {
         const menuList = document.getElementById('menu-list');
-        menuList.innerHTML = `
-            <h2>${item} Menu</h2>
-            <ul>
-                <li>${item} 1</li>
-                <li>${item} 2</li>
-                <li>${item} 3</li>
-            </ul>
-            <button class="go-back" onclick="goBack()">Go Back TO Main Section</button>
-        `;
+        const menuContent = document.getElementById(item).innerHTML; // Get the content of the clicked menu item
+        menuList.innerHTML = menuContent + '<button class="go-back" onclick="goBack()">Go Back to Main Section</button>';
         menuList.style.display = 'block'; // Show menu list
         document.getElementById('menu-section').style.display = 'none'; // Hide the section with containers
     }
