@@ -3,21 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Link</title>
+    <title>Welcome to Cafe Delicioso</title>
     <style>
+        * {
+            box-sizing: border-box; /* Ensure padding and borders are included in width/height */
+        }
+        body {
+            margin: 0; /* Remove default margin */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Full height */
+            background-color: #f8e2d7; /* Light coffee color */
+            background-image: url('https://www.transparenttextures.com/patterns/coffee.png'); /* Coffee texture background */
+            color: #5d5e5d; /* Dark coffee color for text */
+            font-family: 'Arial', sans-serif; /* Font style */
+            text-align: center; /* Center text */
+        }
+        .cafe-logo {
+            width: 150px; /* Logo width */
+            margin-bottom: 20px; /* Space below logo */
+        }
+        h1 {
+            font-size: 2.5em; /* Font size for heading */
+            margin: 0; /* Remove default margin */
+        }
+        h2 {
+            font-size: 1.5em; /* Font size for subheading */
+            margin: 10px 0; /* Space around subheading */
+        }
         .button {
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
+            padding: 15px 30px; /* Button padding */
+            font-size: 1.2em; /* Button font size */
+            color: white; /* Button text color */
             background-color: #5d5e5d; /* Button color */
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor */
             text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s ease; /* Smooth transition */
+        }
+        .button:hover {
+            background-color: #434545; /* Darker shade on hover */
         }
     </style>
 </head>
 <body>
-    <a href="main-section.html" class="button">Check Menu</a>
+
+    <img src="cafeshop.PNG" class="cafe-logo" alt="Cafe Delicioso Logo"> <!-- Replace with your logo URL -->
+    <h1>Welcome to Cafe Delicioso!</h1>
+    <h2>Your coffee journey begins here</h2>
+    <a href="main-section.html" class="button">Check Menu</a> <!-- Button to redirect to menu -->
+
 </body>
 </html>
