@@ -79,6 +79,22 @@
             cursor: pointer;
             font-size: 16px;
         }
+        .added-items {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #eaeaea; /* Background for added items */
+            border-radius: 8px; /* Rounded corners */
+            border: 1px solid #ccc; /* Border for the added items section */
+        }
+        .remove-button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff4c4c; /* Remove button color */
+            color: white;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -124,83 +140,118 @@
 
 <div id="menu-list" class="menu-list"></div>
 
+<!-- Added Items Section -->
+<div id="added-items" class="added-items">
+    <h2>Added Items:</h2>
+    <div id="added-items-list"></div>
+</div>
+
 <!-- Menu Item Templates -->
 <div id="menu-templates" style="display:none;">
     <div id="iced-coffee" class="menu-content">
         <h2>Iced Coffee Menu</h2>
         <div>
             <div>Iced Coffee 1</div>
+            <button onclick="addItem('Iced Coffee 1')">+ Add</button>
             <div>Iced Coffee 2</div>
+            <button onclick="addItem('Iced Coffee 2')">+ Add</button>
             <div>Iced Coffee 3</div>
+            <button onclick="addItem('Iced Coffee 3')">+ Add</button>
         </div>
     </div>
     <div id="mojito" class="menu-content">
         <h2>Mojito Menu</h2>
         <div>
             <div>Mojito 1</div>
+            <button onclick="addItem('Mojito 1')">+ Add</button>
             <div>Mojito 2</div>
+            <button onclick="addItem('Mojito 2')">+ Add</button>
             <div>Mojito 3</div>
+            <button onclick="addItem('Mojito 3')">+ Add</button>
         </div>
     </div>
     <div id="ice-tea" class="menu-content">
         <h2>Ice Tea Menu</h2>
         <div>
             <div>Ice Tea 1</div>
+            <button onclick="addItem('Ice Tea 1')">+ Add</button>
             <div>Ice Tea 2</div>
+            <button onclick="addItem('Ice Tea 2')">+ Add</button>
             <div>Ice Tea 3</div>
+            <button onclick="addItem('Ice Tea 3')">+ Add</button>
         </div>
     </div>
     <div id="hot-chocolate" class="menu-content">
         <h2>Hot Chocolate Menu</h2>
         <div>
             <div>Hot Chocolate 1</div>
+            <button onclick="addItem('Hot Chocolate 1')">+ Add</button>
             <div>Hot Chocolate 2</div>
+            <button onclick="addItem('Hot Chocolate 2')">+ Add</button>
             <div>Hot Chocolate 3</div>
+            <button onclick="addItem('Hot Chocolate 3')">+ Add</button>
         </div>
     </div>
     <div id="green-teas" class="menu-content">
         <h2>Green Teas Menu</h2>
         <div>
             <div>Green Tea 1</div>
+            <button onclick="addItem('Green Tea 1')">+ Add</button>
             <div>Green Tea 2</div>
+            <button onclick="addItem('Green Tea 2')">+ Add</button>
             <div>Green Tea 3</div>
+            <button onclick="addItem('Green Tea 3')">+ Add</button>
         </div>
     </div>
     <div id="hot-coffees" class="menu-content">
         <h2>Hot Coffees Menu</h2>
         <div>
             <div>Hot Coffee 1</div>
+            <button onclick="addItem('Hot Coffee 1')">+ Add</button>
             <div>Hot Coffee 2</div>
+            <button onclick="addItem('Hot Coffee 2')">+ Add</button>
             <div>Hot Coffee 3</div>
+            <button onclick="addItem('Hot Coffee 3')">+ Add</button>
         </div>
     </div>
     <div id="frappe" class="menu-content">
         <h2>Frappe Menu</h2>
         <div>
             <div>Frappe 1</div>
+            <button onclick="addItem('Frappe 1')">+ Add</button>
             <div>Frappe 2</div>
+            <button onclick="addItem('Frappe 2')">+ Add</button>
             <div>Frappe 3</div>
+            <button onclick="addItem('Frappe 3')">+ Add</button>
         </div>
     </div>
     <div id="shakes" class="menu-content">
         <h2>Shakes Menu</h2>
         <div>
             <div>Shake 1</div>
+            <button onclick="addItem('Shake 1')">+ Add</button>
             <div>Shake 2</div>
+            <button onclick="addItem('Shake 2')">+ Add</button>
             <div>Shake 3</div>
+            <button onclick="addItem('Shake 3')">+ Add</button>
         </div>
     </div>
     <div id="bites" class="menu-content">
         <h2>Bites Menu</h2>
         <div>
             <div>Bite 1</div>
+            <button onclick="addItem('Bite 1')">+ Add</button>
             <div>Bite 2</div>
+            <button onclick="addItem('Bite 2')">+ Add</button>
             <div>Bite 3</div>
+            <button onclick="addItem('Bite 3')">+ Add</button>
         </div>
     </div>
 </div>
 
 <script>
+    const addedItemsList = document.getElementById('added-items-list');
+
     function showMenu(item) {
         const menuList = document.getElementById('menu-list');
         const menuContent = document.getElementById(item).innerHTML; // Get the content of the clicked menu item
@@ -213,6 +264,24 @@
         const menuList = document.getElementById('menu-list');
         menuList.style.display = 'none'; // Hide menu list
         document.getElementById('menu-section').style.display = 'grid'; // Show the section with containers
+    }
+
+    function addItem(item) {
+        // Create a new div for the added item
+        const newItem = document.createElement('div');
+        newItem.textContent = item; // Set the text of the new item
+
+        // Create the remove button
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Remove';
+        removeButton.className = 'remove-button';
+        removeButton.onclick = function() {
+            newItem.remove(); // Remove the item when the button is clicked
+        };
+
+        // Append the remove button to the new item div
+        newItem.appendChild(removeButton); 
+        addedItemsList.appendChild(newItem); // Append the new item to the added items list
     }
 </script>
 
