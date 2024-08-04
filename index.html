@@ -39,7 +39,7 @@
             justify-items: center; /* Center items in their grid cells */
             flex: 1; /* Allow section to grow and occupy remaining space */
         }
-        .cafe-manage{
+        .cafe-manage {
             text-align: right;
             background: #d0e3d0;
             width: 100%;
@@ -61,6 +61,28 @@
             text-align: center; /* Center text in footer */
             padding: 10px; /* Add some padding */
             min-height: 50px; /* Set a minimum height for the footer */
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 768px) {
+            .cafe-header {
+                flex-direction: column; /* Stack elements vertically */
+                align-items: center; /* Center items horizontally */
+            }
+            .cafe-logo {
+                width: 50%; /* Make logo larger on mobile */
+            }
+            section {
+                grid-template-columns: repeat(2, 1fr); /* Two columns on mobile */
+                padding: 5%; /* Increase padding for better spacing */
+            }
+            .container {
+                width: 100%; /* Make containers full width */
+            }
+            .cafe-manage {
+                text-align: center; /* Center the management text */
+                padding: 10px 0; /* Add some padding for spacing */
+            }
         }
     </style>
 </head>
