@@ -4,11 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .cafe-logo{
-            width:20%;
+        .cafe-logo {
+            width: 20%;
         }
-        .cafe-header{
+        .cafe-header {
             display: flex;
+            align-items: center; /* Vertically center items */
+            justify-content: center; /* Center items horizontally */
+            height: 100px; /* Set a height for the header */
+        }
+        hr {
+            margin: 0; /* Remove default margin */
+            border: none; /* Remove default border */
+            border-top: 2px solid #000; /* Customize the line */
+            width: 100%; /* Make it full width */
         }
     </style>
 </head>
@@ -16,9 +25,10 @@
 
 <header>
     <div class="cafe-header">
-        <img src="cafeshop.PNG" class="cafe-logo" alt="description" width="width-value" height="height-value">
+        <img src="cafeshop.PNG" class="cafe-logo" alt="description">
         <h1>Welcome to Caffee Delicioso!</h1>
     </div>
+    <hr> <!-- Divider line -->
 </header>
 
 <section>
