@@ -95,6 +95,15 @@
             color: white;
             cursor: pointer;
         }
+        .item {
+            display: flex;
+            justify-content: space-between; /* Align item and price */
+            align-items: center; /* Center vertically */
+            margin-bottom: 5px; /* Space between items */
+        }
+        .item-price {
+            font-weight: bold; /* Bold for price */
+        }
     </style>
 </head>
 <body>
@@ -144,6 +153,7 @@
 <div id="added-items" class="added-items">
     <h2>Added Items:</h2>
     <div id="added-items-list"></div>
+    <h3>Total: <span id="total-price">0</span> Rs</h3>
 </div>
 
 <!-- Menu Item Templates -->
@@ -251,6 +261,8 @@
 
 <script>
     const addedItemsList = document.getElementById('added-items-list');
+    const totalPriceElement = document.getElementById('total-price');
+    let totalPrice = 0;
 
     function showMenu(item) {
         const menuList = document.getElementById('menu-list');
@@ -269,19 +281,36 @@
     function addItem(item) {
         // Create a new div for the added item
         const newItem = document.createElement('div');
-        newItem.textContent = item; // Set the text of the new item
+        newItem.className = 'item';
+        
+        // Create item name and price elements
+        const itemName = document.createElement('span');
+        itemName.textContent = item;
+        
+        const itemPrice = document.createElement('span');
+        itemPrice.textContent = '11 Rs';
+        itemPrice.className = 'item-price';
 
         // Create the remove button
         const removeButton = document.createElement('button');
         removeButton.textContent = 'Remove';
         removeButton.className = 'remove-button';
         removeButton.onclick = function() {
+            totalPrice -= 11; // Decrease total price
+            totalPriceElement.textContent = totalPrice; // Update displayed total
             newItem.remove(); // Remove the item when the button is clicked
         };
 
-        // Append the remove button to the new item div
-        newItem.appendChild(removeButton); 
+        // Append name, price, and remove button to the new item div
+        newItem.appendChild(itemName);
+        newItem.appendChild(itemPrice);
+        newItem.appendChild(removeButton);
+        
         addedItemsList.appendChild(newItem); // Append the new item to the added items list
+        
+        // Update total price
+        totalPrice += 11; // Add price of the new item
+        totalPriceElement.textContent = totalPrice; // Update displayed total
     }
 </script>
 
