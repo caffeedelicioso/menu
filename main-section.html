@@ -156,6 +156,9 @@
     <div class="container" onclick="showMenu('hot-coffees')">
         <div class="food-logo">&#x2615;</div>Hot Coffees
     </div>
+    <div class="container" onclick="showMenu('hot-tea')">
+        <div class="food-logo">&#x2615;</div>Hot Tea
+    </div>
     <div class="container" onclick="showMenu('frappe')">
         <div class="food-logo">🥤</div>Frappe
     </div>
@@ -181,65 +184,111 @@
     <div id="iced-coffee" class="menu-content menu-container">
         <h2>Iced Coffee Menu</h2>
         <div>
-            <div class="item">Iced Coffee 1 <span class="item-price">(20 Rs)</span><button class="cafe-button" onclick="addItem('Iced Coffee 1', 20)">+ Add</button></div>
-            <div class="item">Iced Coffee 2 <span class="item-price">(25 Rs)</span><button class="cafe-button" onclick="addItem('Iced Coffee 2', 25)">+ Add</button></div>
-            <div class="item">Iced Coffee 3 <span class="item-price">(30 Rs)</span><button class="cafe-button" onclick="addItem('Iced Coffee 3', 30)">+ Add</button></div>
+            <div class="item">Iced Americano <span class="item-price">(89 Rs)</span><button class="cafe-button" onclick="addItem('Iced Americano', 89)">+ Add</button></div>
+            <div class="item">Iced Latte <span class="item-price">(99 Rs)</span><button class="cafe-button" onclick="addItem('Iced Latte', 99)">+ Add</button></div>
+            <div class="item">Iced Cappuccino <span class="item-price">(109 Rs)</span><button class="cafe-button" onclick="addItem('Iced Cappuccino', 109)">+ Add</button></div>
+            <div class="item">Iced Coca Cappuccino <span class="item-price">(129 Rs)</span><button class="cafe-button" onclick="addItem('Iced Coca Cappuccino', 129)">+ Add</button></div>
+            <div class="item">Iced Cafe Mocha <span class="item-price">(119 Rs)</span><button class="cafe-button" onclick="addItem('Iced Cafe Mocha', 119)">+ Add</button></div>
+            <div class="item">Iced Caramel Macchiato <span class="item-price">(139 Rs)</span><button class="cafe-button" onclick="addItem('Caramel Macchiato', 139)">+ Add</button></div>
         </div>
     </div>
     <div id="mojito" class="menu-content menu-container">
         <h2>Mojito Menu</h2>
         <div>
-            <div class="item">Mojito 1 <span class="item-price">(35 Rs)</span><button class="cafe-button"  onclick="addItem('Mojito 1', 35)">+ Add</button></div>
-            <div class="item">Mojito 2 <span class="item-price">(40 Rs)</span><button class="cafe-button" onclick="addItem('Mojito 2', 40)">+ Add</button></div>
-            <div class="item">Mojito 3 <span class="item-price">(45 Rs)</span><button class="cafe-button" onclick="addItem('Mojito 3', 45)">+ Add</button></div>
+            <div class="item">Classic Mojito <span class="item-price">(109 Rs)</span><button class="cafe-button"  onclick="addItem('Classic Mojito', 109)">+ Add</button></div>
+            <div class="item">Mint Mojito <span class="item-price">(119 Rs)</span><button class="cafe-button" onclick="addItem('Mint Mojito', 119)">+ Add</button></div>
+            <div class="item">Bubble Gum Mojito <span class="item-price">(129 Rs)</span><button class="cafe-button"  onclick="addItem('Bubble Gum Mojito', 129)">+ Add</button></div>
+            <div class="item">Blue Lagoon Mojito <span class="item-price">(129 Rs)</span><button class="cafe-button"  onclick="addItem('Blue Lagoon Mojito', 129)">+ Add</button></div>
+            <div class="item">Green Apple Mojito <span class="item-price">(129 Rs)</span><button class="cafe-button"  onclick="addItem('Green Apple Mojito', 129)">+ Add</button></div>
+            <div class="item">Strawberry Lemon Mojito <span class="item-price">(119 Rs)</span><button class="cafe-button" onclick="addItem('Strawberry Lemon Mojito', 119)">+ Add</button></div>
         </div>
     </div>
     <div id="ice-tea" class="menu-content menu-container">
-        <h2>Ice Tea Menu</h2>
+        <h2>Iced Tea Menu</h2>
         <div>
-            <div class="item">Ice Tea 1 <span class="item-price">(15 Rs)</span><button class="cafe-button" onclick="addItem('Ice Tea 1', 15)">+ Add</button></div>
-            <div class="item">Ice Tea 2 <span class="item-price">(20 Rs)</span><button class="cafe-button" onclick="addItem('Ice Tea 2', 20)">+ Add</button></div>
-            <div class="item">Ice Tea 3 <span class="item-price">(25 Rs)</span><button class="cafe-button" onclick="addItem('Ice Tea 3', 25)">+ Add</button></div>
+            <div class="item">Lemon Iced Tea <span class="item-price">(89 Rs)</span><button class="cafe-button" onclick="addItem('Lemon Iced Tea', 89)">+ Add</button></div>
+            <div class="item">Peach Iced Tea <span class="item-price">(89 Rs)</span><button class="cafe-button" onclick="addItem('Peach Iced Tea', 89)">+ Add</button></div>
+            <div class="item">Guava Iced Tea <span class="item-price">(99 Rs)</span><button class="cafe-button" onclick="addItem('Guava Iced Tea', 99)">+ Add</button></div>
+            <div class="item">Strawberry Iced Tea <span class="item-price">(109 Rs)</span><button class="cafe-button" onclick="addItem('Strawberry Iced Tea', 109)">+ Add</button></div>
         </div>
     </div>
     <div id="hot-chocolate" class="menu-content menu-container">
         <h2>Hot Chocolate Menu</h2>
         <div>
-            <div class="item">Hot Chocolate 1 <span class="item-price">(30 Rs)</span><button class="cafe-button" onclick="addItem('Hot Chocolate 1', 30)">+ Add</button></div>
-            <div class="item">Hot Chocolate 2 <span class="item-price">(35 Rs)</span><button class="cafe-button" onclick="addItem('Hot Chocolate 2', 35)">+ Add</button></div>
-            <div class="item">Hot Chocolate 3 <span class="item-price">(40 Rs)</span><button class="cafe-button" onclick="addItem('Hot Chocolate 3', 40)">+ Add</button></div>
+            <div class="item">Classic Hot Chocolate <span class="item-price">(99 Rs)</span><button class="cafe-button" onclick="addItem('Classic Hot Chocolate', 99)">+ Add</button></div>
+            <div class="item">Chocolate Hazelnut Delight <span class="item-price">(109 Rs)</span><button class="cafe-button" onclick="addItem('Chocolate Hazelnut Delight', 109)">+ Add</button></div>
+            <div class="item">Nutella Hot Chocolate <span class="item-price">(109 Rs)</span><button class="cafe-button" onclick="addItem('Nutella Hot Chocolate', 109)">+ Add</button></div>
+            <div class="item">Cinnamon Chocolate <span class="item-price">(109 Rs)</span><button class="cafe-button" onclick="addItem('Cinnamon Chocolate', 109)">+ Add</button></div>
+            <div class="item">Tiramisu Chocolate <span class="item-price">(109 Rs)</span><button class="cafe-button" onclick="addItem('Tiramisu Chocolate', 109)">+ Add</button></div>
+            <div class="item">Brownie Hot Chocolate <span class="item-price">(109 Rs)</span><button class="cafe-button" onclick="addItem('Brownie Hot Chocolate', 109)">+ Add</button></div>
         </div>
     </div>
     <div id="green-teas" class="menu-content menu-container">
         <h2>Green Teas Menu</h2>
         <div>
-            <div class="item">Green Tea 1 <span class="item-price">(10 Rs)</span><button class="cafe-button" onclick="addItem('Green Tea 1', 10)">+ Add</button></div>
-            <div class="item">Green Tea 2 <span class="item-price">(15 Rs)</span><button class="cafe-button" onclick="addItem('Green Tea 2', 15)">+ Add</button></div>
-            <div class="item">Green Tea 3 <span class="item-price">(20 Rs)</span><button class="cafe-button" onclick="addItem('Green Tea 3', 20)">+ Add</button></div>
+            <div class="item">Green Tea <span class="item-price">(89 Rs)</span><button class="cafe-button" onclick="addItem('Green Tea', 89)">+ Add</button></div>
+            <div class="item">Hibiscus Cinnamon Green Tea <span class="item-price">(89 Rs)</span><button class="cafe-button" onclick="addItem('Hibiscus Cinnamon Green Tea', 89)">+ Add</button></div>
+            <div class="item">English Green Tea <span class="item-price">(89 Rs)</span><button class="cafe-button" onclick="addItem('English Green Tea', 89)">+ Add</button></div>
+            <div class="item">Honey Lemon Green Tea <span class="item-price">(89 Rs)</span><button class="cafe-button" onclick="addItem('Honey Lemon Green Tea', 89)">+ Add</button></div>
         </div>
     </div>
     <div id="hot-coffees" class="menu-content menu-container">
         <h2>Hot Coffees Menu</h2>
         <div>
-            <div class="item">Hot Coffee 1 <span class="item-price">(25 Rs)</span><button class="cafe-button" onclick="addItem('Hot Coffee 1', 25)">+ Add</button></div>
-            <div class="item">Hot Coffee 2 <span class="item-price">(30 Rs)</span><button class="cafe-button" onclick="addItem('Hot Coffee 2', 30)">+ Add</button></div>
-            <div class="item">Hot Coffee 3 <span class="item-price">(35 Rs)</span><button class="cafe-button" onclick="addItem('Hot Coffee 3', 35)">+ Add</button></div>
+            <div class="item">Expresso <span class="item-price">(69 Rs)</span><button class="cafe-button" onclick="addItem('Expresso', 69)">+ Add</button></div>
+            <div class="item">Americano <span class="item-price">(69 Rs)</span><button class="cafe-button" onclick="addItem('Americano', 69)">+ Add</button></div>
+            <div class="item">Cafe Latte <span class="item-price">(89 Rs)</span><button class="cafe-button" onclick="addItem('Cafe Latte', 89)">+ Add</button></div>
+            <div class="item">Cappuccino <span class="item-price">(89 Rs)</span><button class="cafe-button" onclick="addItem('Cappuccino', 89)">+ Add</button></div>
+            <div class="item">Caramel Macchiato <span class="item-price">(119 Rs)</span><button class="cafe-button" onclick="addItem('Caramel Macchiato', 119)">+ Add</button></div>
+            <div class="item">Filter Coffee <span class="item-price">(109 Rs)</span><button class="cafe-button" onclick="addItem('Filter Coffee', 109)">+ Add</button></div>
+            <div class="item">Flat White Latte <span class="item-price">(99 Rs)</span><button class="cafe-button" onclick="addItem('Flat White Latte', 99)">+ Add</button></div>
+            <div class="item">Hazelnut Latte / Cappuccino <span class="item-price">(105 Rs)</span><button class="cafe-button" onclick="addItem('Hazelnut Latte / Cappuccino', 105)">+ Add</button></div>
+            <div class="item">Irish Latte / Cappuccino <span class="item-price">(105 Rs)</span><button class="cafe-button" onclick="addItem('Irish Latte / Cappuccino', 105)">+ Add</button></div>
+            <div class="item">Vanilla Latte / Cappuccino <span class="item-price">(135 Rs)</span><button class="cafe-button" onclick="addItem('Vanilla Latte / Cappuccino', 135)">+ Add</button></div>
+            <div class="item">Tiramisu Latte / Cappuccino <span class="item-price">(109 Rs)</span><button class="cafe-button" onclick="addItem('Tiramisu Latte / Cappuccino', 109)">+ Add</button></div>
+            <div class="item">Hazelnut Mocha <span class="item-price">(119 Rs)</span><button class="cafe-button" onclick="addItem('Hazelnut Mocha', 119)">+ Add</button></div>
+            <div class="item">Cafe Mocha <span class="item-price">(109 Rs)</span><button class="cafe-button" onclick="addItem('Cafe Mocha', 109)">+ Add</button></div>
+        </div>
+    </div>
+    <div id="hot-tea" class="menu-content menu-container">
+        <h2>Hot Tea Menu</h2>
+        <div>
+            <div class="item">Hot Tea <span class="item-price">(89 Rs)</span><button class="cafe-button" onclick="addItem('Hot Tea', 89)">+ Add</button></div>
+            <div class="item">Black Tea <span class="item-price">(89 Rs)</span><button class="cafe-button" onclick="addItem('Black Tea', 89)">+ Add</button></div>
         </div>
     </div>
     <div id="frappe" class="menu-content menu-container">
         <h2>Frappe Menu</h2>
         <div>
-            <div class="item">Frappe 1 <span class="item-price">(30 Rs)</span><button class="cafe-button" onclick="addItem('Frappe 1', 30)">+ Add</button></div>
-            <div class="item">Frappe 2 <span class="item-price">(35 Rs)</span><button class="cafe-button" onclick="addItem('Frappe 2', 35)">+ Add</button></div>
-            <div class="item">Frappe 3 <span class="item-price">(40 Rs)</span><button class="cafe-button" onclick="addItem('Frappe 3', 40)">+ Add</button></div>
+            <div class="item">Classic Italian Frappe <span class="item-price">(139 Rs)</span><button class="cafe-button" onclick="addItem('Classic Italian Frappe', 139)">+ Add</button></div>
+            <div class="item">Cafe Frappe <span class="item-price">(139 Rs)</span><button class="cafe-button" onclick="addItem('Cafe Frappe', 139)">+ Add</button></div>
+            <div class="item">Indian Frappe (Cold Coffee) <span class="item-price">(129 Rs)</span><button class="cafe-button" onclick="addItem('Indian Frappe (Cold Coffee)', 129)">+ Add</button></div>
+            <div class="item">Cocoa Frappe <span class="item-price">(139 Rs)</span><button class="cafe-button" onclick="addItem('Cocoa Frappe', 139)">+ Add</button></div>
+            <div class="item">Cookies Crumble Frappe <span class="item-price">(189 Rs)</span><button class="cafe-button" onclick="addItem('Cookies Crumble Frappe', 189)">+ Add</button></div>
+            <div class="item">Double Chocolate Frappe <span class="item-price">(149 Rs)</span><button class="cafe-button" onclick="addItem('Double Chocolate Frappe', 149)">+ Add</button></div>
+            <div class="item">Caramel Java Chips Frappe <span class="item-price">(179 Rs)</span><button class="cafe-button" onclick="addItem('Caramel Java Chips Frappe', 179)">+ Add</button></div>
+            <div class="item">Java Chips Frappe <span class="item-price">(159 Rs)</span><button class="cafe-button" onclick="addItem('Java Chips Frappe', 159)">+ Add</button></div>
+            <div class="item">Spanish Hazelnut Frappe <span class="item-price">(229 Rs)</span><button class="cafe-button" onclick="addItem('Spanish Hazelnut Frappe', 229)">+ Add</button></div>
+            <div class="item">French Vanilla Frappe <span class="item-price">(229 Rs)</span><button class="cafe-button" onclick="addItem('French Vanilla Frappe', 229)">+ Add</button></div>
+            <div class="item">Italian Tiramisu Frappe <span class="item-price">(229 Rs)</span><button class="cafe-button" onclick="addItem('Italian Tiramisu Frappe', 229)">+ Add</button></div>
+            <div class="item">Caramel Frappe <span class="item-price">(229 Rs)</span><button class="cafe-button" onclick="addItem('Caramel Frappe', 229)">+ Add</button></div>
         </div>
     </div>
     <div id="shakes" class="menu-content menu-container">
         <h2>Shakes Menu</h2>
         <div>
-            <div class="item">Shake 1 <span class="item-price">(20 Rs)</span><button class="cafe-button" onclick="addItem('Shake 1', 20)">+ Add</button></div>
-            <div class="item">Shake 2 <span class="item-price">(25 Rs)</span><button class="cafe-button" onclick="addItem('Shake 2', 25)">+ Add</button></div>
-            <div class="item">Shake 3 <span class="item-price">(30 Rs)</span><button class="cafe-button" onclick="addItem('Shake 3', 30)">+ Add</button></div>
+            <div class="item">Belgium Chocolate <span class="item-price">(119 Rs)</span><button class="cafe-button" onclick="addItem('Belgium Chocolate', 119)">+ Add</button></div>
+            <div class="item">Chocolate Eclair <span class="item-price">(139 Rs)</span><button class="cafe-button" onclick="addItem('Chocolate Eclair', 139)">+ Add</button></div>
+            <div class="item">Chocolate Brownie <span class="item-price">(159 Rs)</span><button class="cafe-button" onclick="addItem('Chocolate Brownie', 159)">+ Add</button></div>
+            <div class="item">Chocolate Oreo <span class="item-price">(139 Rs)</span><button class="cafe-button" onclick="addItem('Chocolate Oreo', 139)">+ Add</button></div>
+            <div class="item">Kit-Kat Chocolate Shake <span class="item-price">(159 Rs)</span><button class="cafe-button" onclick="addItem('Kit-Kat Chocolate Shake', 159)">+ Add</button></div>
+            <div class="item">Strawberry Shake <span class="item-price">(159 Rs)</span><button class="cafe-button" onclick="addItem('Strawberry Shake', 159)">+ Add</button></div>
+            <div class="item">Bluberry Cheesecake Shake <span class="item-price">(179 Rs)</span><button class="cafe-button" onclick="addItem('Bluberry Cheesecake Shake', 179)">+ Add</button></div>
+            <div class="item">Bubble-Gum Shake <span class="item-price">(139 Rs)</span><button class="cafe-button" onclick="addItem('Bubble-Gum Shake', 139)">+ Add</button></div>
+            <div class="item">Spanish Hazelnut Shake <span class="item-price">(189 Rs)</span><button class="cafe-button" onclick="addItem('Spanish Hazelnut Shake', 189)">+ Add</button></div>
+            <div class="item">French Vanilla Shake <span class="item-price">(189 Rs)</span><button class="cafe-button" onclick="addItem('French Vanilla Shake', 189)">+ Add</button></div>
+            <div class="item">Hazelnut Chocolate Shake <span class="item-price">(199 Rs)</span><button class="cafe-button" onclick="addItem('Hazelnut Chocolate Shake', 199)">+ Add</button></div>
+            <div class="item">Nutella Chocolate Hazelnut <span class="item-price">(189 Rs)</span><button class="cafe-button" onclick="addItem('Nutella Chocolate Hazelnut', 189)">+ Add</button></div>
         </div>
     </div>
     <div id="bites" class="menu-content menu-container">
