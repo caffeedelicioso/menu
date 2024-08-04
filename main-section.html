@@ -104,6 +104,14 @@
         .item-price {
             font-weight: bold; /* Bold for price */
         }
+        .menu-container {
+            border: 1px solid #ccc; /* Border around each menu */
+            padding: 15px; /* Padding inside menu */
+            border-radius: 8px; /* Rounded corners */
+            background-color: #f1f1f1; /* Light background color for menus */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+            margin-bottom: 15px; /* Space below each menu */
+        }
     </style>
 </head>
 <body>
@@ -158,7 +166,7 @@
 
 <!-- Menu Item Templates -->
 <div id="menu-templates" style="display:none;">
-    <div id="iced-coffee" class="menu-content">
+    <div id="iced-coffee" class="menu-content menu-container">
         <h2>Iced Coffee Menu</h2>
         <div>
             <div>Iced Coffee 1 <span>(20 Rs)</span></div>
@@ -169,7 +177,7 @@
             <button onclick="addItem('Iced Coffee 3', 30)">+ Add</button>
         </div>
     </div>
-    <div id="mojito" class="menu-content">
+    <div id="mojito" class="menu-content menu-container">
         <h2>Mojito Menu</h2>
         <div>
             <div>Mojito 1 <span>(35 Rs)</span></div>
@@ -180,7 +188,7 @@
             <button onclick="addItem('Mojito 3', 45)">+ Add</button>
         </div>
     </div>
-    <div id="ice-tea" class="menu-content">
+    <div id="ice-tea" class="menu-content menu-container">
         <h2>Ice Tea Menu</h2>
         <div>
             <div>Ice Tea 1 <span>(15 Rs)</span></div>
@@ -191,7 +199,7 @@
             <button onclick="addItem('Ice Tea 3', 25)">+ Add</button>
         </div>
     </div>
-    <div id="hot-chocolate" class="menu-content">
+    <div id="hot-chocolate" class="menu-content menu-container">
         <h2>Hot Chocolate Menu</h2>
         <div>
             <div>Hot Chocolate 1 <span>(30 Rs)</span></div>
@@ -202,7 +210,7 @@
             <button onclick="addItem('Hot Chocolate 3', 40)">+ Add</button>
         </div>
     </div>
-    <div id="green-teas" class="menu-content">
+    <div id="green-teas" class="menu-content menu-container">
         <h2>Green Teas Menu</h2>
         <div>
             <div>Green Tea 1 <span>(10 Rs)</span></div>
@@ -213,7 +221,7 @@
             <button onclick="addItem('Green Tea 3', 20)">+ Add</button>
         </div>
     </div>
-    <div id="hot-coffees" class="menu-content">
+    <div id="hot-coffees" class="menu-content menu-container">
         <h2>Hot Coffees Menu</h2>
         <div>
             <div>Hot Coffee 1 <span>(25 Rs)</span></div>
@@ -224,7 +232,7 @@
             <button onclick="addItem('Hot Coffee 3', 35)">+ Add</button>
         </div>
     </div>
-    <div id="frappe" class="menu-content">
+    <div id="frappe" class="menu-content menu-container">
         <h2>Frappe Menu</h2>
         <div>
             <div>Frappe 1 <span>(30 Rs)</span></div>
@@ -235,7 +243,7 @@
             <button onclick="addItem('Frappe 3', 40)">+ Add</button>
         </div>
     </div>
-    <div id="shakes" class="menu-content">
+    <div id="shakes" class="menu-content menu-container">
         <h2>Shakes Menu</h2>
         <div>
             <div>Shake 1 <span>(20 Rs)</span></div>
@@ -246,7 +254,7 @@
             <button onclick="addItem('Shake 3', 30)">+ Add</button>
         </div>
     </div>
-    <div id="bites" class="menu-content">
+    <div id="bites" class="menu-content menu-container">
         <h2>Bites Menu</h2>
         <div>
             <div>Bite 1 <span>(15 Rs)</span></div>
