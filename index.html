@@ -15,22 +15,29 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh; /* Full height */
-            background-color: #d0e3d0; /* Light coffee color */
-            background-image: url('https://www.transparenttextures.com/patterns/coffee.png'); /* Coffee texture background */
+            background-image: url('https://www.transparenttextures.com/patterns/coffee.png'), 
+                              url('https://images.unsplash.com/photo-1514143360313-83e9e1f70e53?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGcoffee%20beans&ixlib=rb-4.0.3&q=80&w=1080'); /* Coffee beans background */
+            background-size: cover; /* Cover the entire area */
+            background-position: center; /* Center the background image */
             color: #000; /* Dark coffee color for text */
             font-family: 'Arial', sans-serif; /* Font style */
             text-align: center; /* Center text */
+            position: relative; /* For absolute positioning */
+            overflow: hidden; /* Prevent overflow */
         }
         .cafe-logo {
             width: 22%;
+            margin-bottom: 20px; /* Space below logo */
         }
         h1 {
             font-size: 2.5em; /* Font size for heading */
             margin: 0; /* Remove default margin */
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* Add shadow for better readability */
         }
         h2 {
             font-size: 1.5em; /* Font size for subheading */
             margin: 10px 0; /* Space around subheading */
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8); /* Add shadow for better readability */
         }
         .button {
             padding: 15px 30px; /* Button padding */
